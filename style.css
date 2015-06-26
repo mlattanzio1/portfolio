@@ -1,0 +1,467 @@
+/* Global */
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*
+
+Colors:
+
+Red: 		#CF000F
+Dark Grey:  #424242
+Light Grey: #ECECEC
+White:	    #F2F1EF
+
+*/
+
+body {
+	width: 100%;
+	font-family: 'Fjalla One';
+	color: white;
+	margin: 0;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Header */
+
+.top-bar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 10px;
+	background-color: #CF000F;
+}
+
+.bottom-bar {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #CF000F;
+}
+
+h1 {
+	font-size: 60px;
+	letter-spacing: 20px;
+	text-align: center;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 900px;
+	text-align: center;
+	background: url(images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.header img {
+	width: 300px;
+	padding-top: 100px;
+}
+
+/* Nav */
+
+.nav {
+	margin: 0 auto;
+}
+
+ul.nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.nav li {
+	display: inline;
+}
+
+ul.nav li a {
+	text-decoration: none;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #F2F1EF;
+	padding: 0 10px 0 10px;
+	-webkit-transition: 100ms;
+	-moz-transition: 100ms;
+	-o-transition: 100ms;
+	transition: 100ms;
+}
+
+ul.nav li a:hover {
+	color: #CF000F;
+}
+
+/* Portfolio */
+
+.portfolio {
+	width: 100%;
+	background-color: #F2F1EF;
+	height: 600px;
+}
+
+.port-sidebar {
+	width: 30%;
+	float: left;
+}
+
+.port {
+	width: 50%;
+	height: 200px;
+/*	padding-bottom: 50%;*/
+	float: left;
+	background-color: #F2F1EF;
+	border: 10px solid #ececec;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.port:hover {
+	border: 10px solid #424242;
+	cursor: pointer;
+}
+
+.port.active {
+	border: 10px solid #CF000F;
+}
+
+.port1 {
+	background: url(images/port1.png) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.port2 {
+	background: url(images/port2.png) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.port3 {
+	background: url(images/port3.png) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.port4 {
+	background: url(images/port4.png) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.port5 {
+	background: url(images/port5.png) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.port6 {
+	background: url(images/port6.png) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.port-main {
+	width: 70%;
+	height: 600px;
+	text-align: center;
+	padding: 75px;
+	float: left;
+	background: url(images/port1-bg.jpg) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+/* Trick to set opacity to backgound image */
+
+.port-main:after {
+	content: "";
+	background-color: #F2F1EF;
+	opacity: 0.9;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+
+h2 {
+	text-transform: uppercase;
+	color: #CF000F;
+	font-size: 50px;
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #424242;
+	font-size: 30px;
+	padding: 0;
+	padding-top: 15px;
+	margin: 0;
+}
+
+p {
+	font-family: 'Lato';
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	color: #424242;
+}
+
+.button {
+	padding-top: 20px
+}
+
+.button a {
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 0 auto;
+	width: 120px;
+	color: #CF000F;
+	font-size: 18px;
+	padding: 10px 15px;
+	border: 3px solid #CF000F;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.button a:hover {
+	background-color: #CF000F;
+	color: #F2F1EF;
+}
+
+/* Modal Overlay Style */
+
+.port-content {
+	display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 1000;
+}
+
+.overlayInner {
+  position: absolute;
+  height: 3000px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #F2F1EF;
+  padding: 0px;
+  text-align: right;
+/*  z-index: -1;
+  opacity: 0;*/
+  transition: all 0.25s;
+}
+
+.overlayContent {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.overlayContent img  {
+  width: 90%;
+  padding: 5%;
+}
+
+a.close img {
+  position: fixed;
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 1%;
+  right: 1%;
+  line-height:20px;
+  text-align: center;
+}
+
+/* About */
+
+.about {
+	width: 100%;
+	height: 800px;
+}
+
+.about-left {
+	width: 50%;
+	height: 600px;
+	float: left;
+	padding: 50px;
+}
+
+.about-left img {
+	width: 50px;
+	float: left;
+}
+
+.about-left a {
+	text-decoration: none;
+	color: #CF000F;
+}
+
+.about-right {
+	width: 50%;
+	height: 600px;
+	float: left;
+	padding: 50px 50px 50px 0;
+}
+
+.about-right ul {
+	padding: 0;
+	margin: 0;
+}
+
+.about-right ul li img {
+	width: 100px;
+	float: left;
+	padding-right: 20px;
+}
+
+h4 {
+	padding: 0;
+	margin: 0;
+	color: #424242;
+	font-size: 24px;
+}
+
+.about-right p {
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+/* Responsive CSS */
+
+/* Tablet */
+
+@media (max-width: 980px) {
+
+	h1 {
+		font-size: 40px;
+		letter-spacing: 10px;
+	}
+
+	.header {
+		height: 700px;
+	}
+
+	.port-sidebar {
+		width: 100%;
+		float: left;
+	}
+
+	.port {
+		width: 33.33%;
+		height: 0;
+		padding-bottom: 33.33%;
+	}
+
+	.port-main {
+		width: 100%;
+		height: auto;
+	}
+
+	.about-left {
+		width: 100%;
+		height: auto;
+	}
+
+	.about-right {
+		width: 100%;
+		height: auto;
+		padding: 50px;
+	}
+
+}
+ 
+/* Phone */
+
+@media (max-width: 480px) {
+
+	h1 {
+		font-size: 20px;
+		letter-spacing: 5px;
+	}
+
+	.header {
+		height: 500px;
+	}
+
+	.port {
+		width: 50%;
+		height: 0;
+		padding-bottom: 50%;
+	}
+
+	.about-right ul li img {
+		width: 70px;
+	}
+
+	.about-right, .about-left {
+		padding: 20px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+}

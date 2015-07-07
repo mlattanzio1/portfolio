@@ -37,7 +37,7 @@
 	      	data-sub="Design + Typesetting"
 	      	data-desc="For their first offical year of operations, MMBC required an Annual Report to present to their various stakeholder groups. This sleek and professional report visualizes the information in a clean and readable manner."
 	      	data-content="port1"
-	      	data-link="http://www.multimaterialbc.ca"
+	      	data-link="http://www.multimaterialbc.ca/wp-content/uploads/2015/06/MMBC_AR_FINAL_Spreads_Web.pdf"
 			></div>
 		<div class="port port2"
 			data-image="images/port2-bg.jpg"
@@ -205,13 +205,18 @@ app.init = function() {
   // Listen for a click on a link to open the modal
 
   $('.button').on('click', function() {
+  	
   	// Grab the data-content attr of the clicked button
+  	
   	var portContent = $(this).data('content');
+    
     // Create a variable that grabs content that matches "data-content"
+
     var text = $('.port-content > .'+portContent).html();
     app.open(text);
 
     // Scroll to the top of the page
+
     $('html, body').animate({
            'scrollTop':   $('#home').offset().top
          }, 10);
@@ -223,6 +228,7 @@ app.init = function() {
     app.close();
 
     // Scroll to the portfolio
+
     $('html, body').animate({
            'scrollTop':   $('#portfolio').offset().top
          });
@@ -235,6 +241,7 @@ app.init = function() {
       app.close();
       
       // Scroll to the portfolio
+
       $('html, body').animate({
            'scrollTop':   $('#portfolio').offset().top
          });
@@ -246,7 +253,7 @@ app.init = function() {
 $(function() { // Start of doc ready
 
 // Portfolio gallery
-	
+
 $('.port').on('click', function () {
 
 	var $el = $(this);
